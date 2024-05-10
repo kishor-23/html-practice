@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Sign Up</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        input:focus{
+    background-color:white;
+}
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #c24f4f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(68, 63, 94, 0.1);
+        }
+        body {
+  background-image: url('img/sign-up-cover.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+        h2 {
+            text-align: center;
+            /* color: #333; */
+        }
+        input[type="text"], input[type="number"],select, input[type="tel"],input[type="email"], input[type="password"] ,textarea, input[type="date"]{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #464545;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+        .form-group label {
+            display: block;
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group .terms {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="thankyou.html" >
+            <div >
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+            <div >
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  placeholder="Email" required>
+            </div>
+            <div >
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>  
+            </div>
+            <div >
+                <label for="phone">Phone no</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone no" required>
+            </div>
+            <div >
+                <label for="date">Date of birth</label>
+                <input type="date" id="email" name="date" required>
+            </div>
+           
+            <div>
+               <p>Gender :</p>
+                  <input type="radio" id="html" name="gender" value="male">
+                  <label for="html">male</label>
+                  <input type="radio" id="css" name="gender" value="female">
+                  <label for="html">female</label>
+            </div>
+            
+            <br>
+            <div >
+            <label for="country">Choose a country:</label>
+            <select name="country" >
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Dubai">Dubai</option>
+            </select>
+            <div>
+             <div>
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" required></textarea>
+  
+  <label for="zip-code">Pin Code:</label>
+  <input type="number" min="625001" max="625012" id="zip-code" name="zip-code"  value="625001" required>
+</div>
+               <p> upload a profile image:</p>
+               <input type="file" id="myFile" name="filename">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">I agree to the terms and conditions:</label>
+ 
+            </div>
+             <br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
