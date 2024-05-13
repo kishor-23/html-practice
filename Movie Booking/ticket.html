@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .seat {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 2px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            cursor: pointer;
+        }
+        .seat:hover {
+            background-color: rgb(232, 53, 53);
+        }
+        .seat.selected {
+            background-color: rgb(232, 55, 55);
+        }
+        .seat.booked {
+            background-color:  #575353;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:  rgb(204, 49, 49);
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Choose Your seats</h1>
+    <form action="movieticket.html">
+        <div class="container">
+            <div class="row">
+                <div class="seat booked" id="row-1-seat-1">a1</div>
+                <div class="seat" id="row-1-seat-2">a2</div>
+                <div class="seat" id="row-1-seat-3">a3</div>
+                <div class="seat" id="row-1-seat-4">a4</div>
+                <div class="seat" id="row-1-seat-5">a5</div> 
+                <div class="seat" id="row-1-seat-6" style="padding: 2px; margin-left: 80px; text-align: center;">a6</div> <!-- New seat -->
+                <div class="seat" id="row-1-seat-7" style="padding: 2px; text-align: center;">a7</div> <!-- New seat -->
+                <div class="seat" id="row-1-seat-8" style="padding: 2px; text-align: center;">a8</div> <!-- New seat -->
+                <div class="seat" id="row-1-seat-9" style="padding: 2px; text-align: center;">a9</div> <!-- New seat -->
+                
+                
+            </div>
+            <div class="row">
+                <div class="seat" id="row-2-seat-1">b1</div>
+                <div class="seat booked" id="row-2-seat-2">b2</div>
+                <div class="seat booked" id="row-2-seat-3">b3</div>
+                <div class="seat" id="row-2-seat-4">b4</div> <!-- New seat -->
+                <div class="seat" id="row-2-seat-5">b5</div> <!-- New seat -->
+                <div class="seat" id="row-2-seat-6" style="padding: 2px; margin-left: 80px; text-align: center;">b6</div> <!-- New seat -->
+                <div class="seat" id="row-2-seat-7" style="padding: 2px; text-align: center;">b7</div> <!-- New seat -->
+                <div class="seat" id="row-2-seat-8" style="padding: 2px; text-align: center;">b8</div> <!-- New seat -->
+                <div class="seat" id="row-2-seat-9" style="padding: 2px; text-align: center;">b9</div> <!-- New seat -->
+                <!-- More seats -->
+            </div>
+            <div class="row">
+                <div class="seat" id="row-3-seat-1">c1</div>
+                <div class="seat" id="row-3-seat-2">c2</div>
+                <div class="seat" id="row-3-seat-3">c3</div>
+                <div class="seat" id="row-3-seat-4">c4</div> <!-- New seat -->
+                <div class="seat" id="row-3-seat-5">c5</div> <!-- New seat -->
+                <div class="seat" id="row-3-seat-6" style="padding: 2px; margin-left: 80px; text-align: center;">c6</div> <!-- New seat -->
+                <div class="seat" id="row-3-seat-7" style="padding: 2px; text-align: center;">c7</div> <!-- New seat -->
+                <div class="seat" id="row-3-seat-8" style="padding: 2px; text-align: center;">c8</div> <!-- New seat -->
+                <div class="seat" id="row-3-seat-9" style="padding: 2px; text-align: center;">c9</div> <!-- New seat -->
+                <!-- More seats -->
+            </div>
+            <div class="row">
+                <div class="seat" id="row-4-seat-1">d1</div>
+                <div class="seat" id="row-4-seat-2">d2</div>
+                <div class="seat" id="row-4-seat-3">d3</div>
+                <div class="seat" id="row-4-seat-4">d4</div> <!-- New seat -->
+                <div class="seat" id="row-4-seat-5">d5</div> <!-- New seat -->
+                <div class="seat" id="row-4-seat-6" style="padding: 2px; margin-left: 80px; text-align: center;">d6</div>
+                <div class="seat" id="row-4-seat-7" style="padding: 2px; text-align: center;">d7</div>
+                <div class="seat" id="row-4-seat-8" style="padding: 2px; text-align: center;">d8</div>
+                <div class="seat" id="row-4-seat-9" style="padding: 2px; text-align: center;">d9</div>
+                <!-- More seats -->
+            </div>
+           
+          
+         
+       
+     
+ 
+            
+            <!-- More rows -->
+            <button type="submit" style="margin-left: 15px;">Submit</button>
+        </div>
+   
+
+    <script>
+        const seats = document.querySelectorAll('.seat');
+        seats.forEach(seat => {
+            seat.addEventListener('click', () => {
+                seat.classList.toggle('selected');
+                if (seat.classList.contains('selected')) {
+                    console.log('Selected seat:', seat.id);
+                } else {
+                    console.log('Deselected seat:', seat.id);
+                }
+            });
+        });
+
+       
+    </script>
+</body>
+</html>
