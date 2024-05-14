@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <!-- bootstrap and icon cdn -->
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -31,16 +31,18 @@
       scroll-behavior: smooth;
       transition: 0.4s all ease-in-out;
     }
+
     * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    input[type=search]:focus{
-  /* outline: 2px solid #e21a3f;  */
-  /* box-shadow:1px #e21a3f; */
-  /* oranges! yey */
-}
+
+    input[type=search]:focus {
+      /* outline: 2px solid #e21a3f;  */
+      /* box-shadow:1px #e21a3f; */
+      /* oranges! yey */
+    }
 
     input[type="submit"] {
       background-color: #e21a3f;
@@ -62,7 +64,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#book"> Book </a>
@@ -85,6 +87,11 @@
 
           <li class="nav-item">
             <a class="nav-link text-danger" href="signup.html">Sign up</a>
+          </li>
+          <div class="mt-2 " style="color: rgb(150, 140, 140);">
+            /
+          </div>
+          <a class="nav-link text-danger" href="signin.html">Sign in</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -130,7 +137,7 @@
     <div class="p-5 mb-2 bg-danger text-white">
       <h3 id="book">Book Your Ticket</h3>
       <br />
-      <form action="ticket.html">
+      <form action="seatbooking.html">
         <div class="row">
           <div class="col-md-2">
             <label for="movie">Movie:</label>
@@ -197,11 +204,12 @@
           scrollbar-width: none;
         ">
       <div class="col-md-3 col-sm-4">
-        <img class="rounded mx-auto d-block" src="img/joker.avif" alt="joker"  width="100%" height="100%" />
+        <a href="jokermovie.html"> <img class="rounded mx-auto d-block" src="img/joker.avif" alt="joker" width="100%"
+            height="100%" /></a>
       </div>
       <div class="col-md-3 col-sm-4">
-        <img class="rounded " src="img/harry-potter-and-the-goblet-of-fire.avif"
-          alt="harry-potter-and-the-goblet-of-fire"  width="100%" height="100%" />
+        <a href="harrypotter.html"> <img class="rounded " src="img/harry-potter-and-the-goblet-of-fire.avif"
+            alt="harry-potter-and-the-goblet-of-fire" width="100%" height="100%" /></a>
       </div>
       <div class="col-md-3 col-sm-4">
         <img class="rounded" src="img/spider-man.jpg" alt="spider-man" width="100%" height="100%" />
@@ -239,7 +247,7 @@
     <p>Email: Bookmyshow@gmail.com</p>
   </div>
 
-  <footer class="footer bg-dark text-white py-4 w-100 p-2" >
+  <footer class="footer bg-dark text-white py-4 w-100 p-2">
     <div class="container-fluid ">
       <div class="row">
         <div class="col-md-6">

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">
+            <img src="img/logo.jpg" alt="logo" width="120" height="80" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#book"> Book </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Location
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Madurai</a>
+                        <a class="dropdown-item" href="#">Chennai</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="signup.html">Sign up</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                    Find Movie
+                </button>
+            </form>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-2">
+                <img class="rounded mx-auto d-block" src="img/harry-potter-and-the-goblet-of-fire.avif" alt="joker"
+                    width="100%" height="90%" />
+            </div>
+            <div class="col-md-8">
+                <h1>harry potter and the goblet of fire</h1>
+                <p>
+                    Harry Potter and the Goblet of Fire is a 2005 fantasy film directed
+                    by Mike Newell from a screenplay by Steve Kloves, based on the 2000
+                    novel of the same name by J.K. Rowling. It is the sequel to Harry
+                    Potter and the Prisoner of Azkaban (2004) and the fourth instalment
+                    in the Harry Potter film series. The film stars Daniel Radcliffe as
+                    Harry Potter, alongside Rupert Grint and Emma Watson as Harry's best
+                    friends Ron Weasley and Hermione Granger respectively. The story
+                    follows Harry's fourth year at Hogwarts as he is chosen by the
+                    Goblet of Fire to compete in the Triwizard Tournament.
+                </p>
+
+                <!-- <span class="fa fa-star checked text-danger"></span>
+            <span class="fa fa-star checked text-danger"></span>
+            <span class="fa fa-star checked text-danger"></span>
+            <span class="fa fa-star text-danger"></span>
+            <span class="fa fa-star-half checked text-danger"></span> -->
+
+                <!-- <h6>Release Date: October 4, 2019</h6> -->
+                <h6>Director: Mike Newell</h6>
+                <h6>Cast: Daniel Radcliffe, Rupert Grint, Emma Watson</h6>
+                <h6>Genre: Fantasy</h6>
+                <h6>Duration: 2h 37m</h6>
+                <h6>Rating: 7.7/10</h6>
+                <button type="button" class="btn btn-danger" style="display: flex">
+                    watch trailer
+                </button>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-8">
+                <h3>cast</h3>
+                <!-- <h6>Daniel Radcliffe, Rupert Grint, Emma Watson</h6> -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DanielRadcliffe.jpg/600px-DanielRadcliffe.jpg"
+                            alt="Daniel Radcliffe" class="img-fluid" />
+                        <h6>Daniel Radcliffe</h6>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="https://www.unwomen.org/sites/default/files/2022-10/UN-Women-Goodwill-Ambassador-Emma-Watson-Credit-Celeste-Sloman-853x1280.jpg"
+                            alt="Emma Watson" class="img-fluid" />
+                        <h6>Emma Watson</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <footer>
+            <p style="text-align: center">Bookmyshow@gmai.com</p>
+        </footer>
+    </div>
+</body>
+
+</html>

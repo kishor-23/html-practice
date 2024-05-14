@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Ticket</title>
 </head>
 <body>
     <style>
@@ -64,7 +64,7 @@ hr{
 .ticketDetail{
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 4px 16px;
+    padding: 4px 16px 12px 16px;
 }
 .ticketSubDetail{
     display: flex;
@@ -81,6 +81,7 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 .circleLeft{
     width: 12px;
@@ -112,7 +113,7 @@ hr{
 
 
 /* Ticket Bouncing Animation */
-/* @keyframes bouncingCard {
+ /* @keyframes bouncingCard {
     from { transform: translateY(0);}
     to {transform: translateY(-18px);}
 }
@@ -123,13 +124,14 @@ hr{
 
     </style>
     <div class="box">
-    <div class="ticketContainer">
+ <a onclick="window.print()">
+    <div class="ticketContainer" >
         <div class="ticket">
           <div class="ticketTitle">Cinema XXV</div>
           <hr>
           <div class="ticketDetail">
             <div>Movie: Kong VS Godzilla</div>
-            <div>Studio: 5</div>
+            <div>Tickets: 5</div>
             <div>Time:   19:20</div>
           </div>
           <div class="ticketRip">
@@ -143,13 +145,24 @@ hr{
         </div>
           <div class="ticketSubDetail">
             <div class="code">LO-2314XXX</div>
-            <div class="date"> May 12<sup>th</sup> 2024</div>
+            <div class="date" style=""> May 12<sup>th</sup> 2024</div>
           
+          </div>
+          <div class="ticketDetail">
+            <div style="text-align: right;"> Amount :  rs. 1000</div>
           </div>
         </div>
         <div class="ticketShadow"></div>
       </div>
     </div>
-      <p style="text-align: center; font-size:20px ;">Booking confirm Thank you , to go to home page <a href="index.html">click here</a></p>
-</body>
+</a>
+    <!-- <div style="display: flex; justify-content: center; align-items: center;"></div> -->
+    <!-- <p style="text-align: center; font-size: 20px;">Booking confirm Thank you, <a href="index.html">click here</a></p> -->
+    <div class="button-container" style="text-align: center; margin: 10px;">
+        <!-- <button onclick="window.print()"> Print the ticket</button> -->
+   
+      <p style="text-align: center; font-size:20px ;">Congrats !!  your ticket has been booked,visit <a href="index.html">Bookmyshow</a> for more details</p>
+    </div>
+    
+    </body>
 </html>
